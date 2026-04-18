@@ -8,7 +8,7 @@ const AboutUs: React.FC = () => {
       <Container maxWidth="lg">
         <Typography
           align="center"
-          sx={{ letterSpacing: 2, color: "#B8973C", fontSize: "14px", mb: 1 }}
+          sx={{ letterSpacing: 2, color: "#B8973C", fontSize: "18px",  fontWeight: 600,mb: 1 }}
         >
           KNOW US
         </Typography>
@@ -48,8 +48,8 @@ const AboutUs: React.FC = () => {
             </Box>
 
             <Box>
-              <Typography sx={{ color: "#B8973C", fontWeight: 600, mb: 1 }}>Founder & CEO, Tatvam Vastu</Typography>
-              <Typography sx={{ mb: 2, color: "text.secondary" }}>
+              <Typography sx={{ color: "#B8973C", fontSize: "1.2rem",fontWeight: 600, mb: 1 }}>Founder & CEO, Tatvam Vastu</Typography>
+              <Typography sx={{ mb: 2, color: "text.secondary" ,fontSize: "1rem"}}>
                 With a deep understanding of ancient Vastu Shastra principles and their application in modern architecture, our founder has dedicated years to mastering this sacred science.
               </Typography>
 
@@ -69,17 +69,17 @@ const AboutUs: React.FC = () => {
           <Box sx={{ display: "grid", gap: 3, gridTemplateColumns: { xs: "1fr", md: "repeat(3, 1fr)" } }}>
             <Box sx={{ textAlign: "center", py: 4, backgroundColor: "#fff", borderRadius: 3, border: "1px solid transparent" }}>
               <Typography sx={{ fontSize: { xs: 40, md: 48 }, fontWeight: 700, color: "#B8973C" }}>98%</Typography>
-              <Typography sx={{ letterSpacing: 1.5, mt: 1, color: "text.secondary" }}>SUCCESS RATE</Typography>
+              <Typography sx={{ letterSpacing: 1.5, mt: 1, color: "text.secondary",fontWeight: 800 }}>SUCCESS RATE</Typography>
             </Box>
 
             <Box sx={{ textAlign: "center", py: 4, backgroundColor: "#fff", borderRadius: 3, border: "1px solid transparent" }}>
               <Typography sx={{ fontSize: { xs: 40, md: 48 }, fontWeight: 700, color: "#B8973C" }}>4.9</Typography>
-              <Typography sx={{ letterSpacing: 1.5, mt: 1, color: "text.secondary" }}>CLIENT RATING</Typography>
+              <Typography sx={{ letterSpacing: 1.5, mt: 1, color: "text.secondary",fontWeight: 800 }}>CLIENT RATING</Typography>
             </Box>
 
             <Box sx={{ textAlign: "center", py: 4, backgroundColor: "#fff", borderRadius: 3, border: "1px solid transparent" }}>
               <Typography sx={{ fontSize: { xs: 40, md: 48 }, fontWeight: 700, color: "#B8973C" }}>10+</Typography>
-              <Typography sx={{ letterSpacing: 1.5, mt: 1, color: "text.secondary" }}>YEARS EXPERIENCE</Typography>
+              <Typography sx={{ letterSpacing: 1.5, mt: 1, color: "text.secondary",fontWeight: 800 }}>YEARS EXPERIENCE</Typography>
             </Box>
           </Box>
         </Box>

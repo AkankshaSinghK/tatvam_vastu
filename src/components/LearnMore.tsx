@@ -24,7 +24,7 @@ const LearnMore: React.FC = () => {
   return (
     <Box sx={{ py: 10, backgroundColor: "#fff" }}>
       <Container maxWidth="lg">
-        <Typography align="center" sx={{ letterSpacing: 2, color: "#B8973C", fontSize: "14px", mb: 1 }}>
+        <Typography align="center" sx={{ letterSpacing: 2, color: "#B8973C", fontSize: "18px",  fontWeight: 600,mb: 1 }}>
           LEARN MORE
         </Typography>
 
@@ -36,7 +36,7 @@ const LearnMore: React.FC = () => {
           Understanding Vastu Shastra
         </Typography>
 
-        <Typography align="center" color="text.secondary" sx={{ mb: 6, maxWidth: 900, mx: "auto" }}>
+        <Typography align="center" color="text.secondary" sx={{ mb: 6, maxWidth: 900, mx: "auto" ,fontSize: "1.2rem"}}>
           Ancient wisdom for modern living — discover the science behind harmonious spaces and how small changes unlock lasting benefits.
         </Typography>
 

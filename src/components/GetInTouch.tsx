@@ -5,7 +5,7 @@ const GetInTouch: React.FC = () => {
   return (
     <Box id="getintouch" sx={{ py: 10, backgroundColor: "#fff" }}>
       <Container maxWidth="md">
-        <Typography align="center" sx={{ letterSpacing: 2, color: "#B8973C", fontSize: "14px", mb: 1 }}>
+        <Typography align="center" sx={{ letterSpacing: 2, color: "#B8973C", fontSize: "18px", fontWeight: 600, mb: 1 }}>
           LET'S CONNECT
         </Typography>
 
@@ -13,7 +13,7 @@ const GetInTouch: React.FC = () => {
           Let's Connect
         </Typography>
 
-        <Typography align="center" color="text.secondary" sx={{ mb: 6 }}>
+        <Typography align="center" color="text.secondary" sx={{ mb: 6 ,fontSize: "1.2rem"}}>
           Ready to transform your space? Reach out for a consultation
         </Typography>
 

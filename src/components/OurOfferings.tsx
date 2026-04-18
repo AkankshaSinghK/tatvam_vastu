@@ -32,7 +32,7 @@ const OurOfferings: React.FC = () => {
   return (
     <Box sx={{ py: 10, backgroundColor: "#f8f6f2" }}>
       <Container maxWidth="lg">
-        <Typography align="center" sx={{ letterSpacing: 2, color: "#B8973C", fontSize: "14px", mb: 1 }}>
+        <Typography align="center" sx={{ letterSpacing: 2, color: "#B8973C", fontSize: "18px",  fontWeight: 600,mb: 1 }}>
           OUR OFFERINGS
         </Typography>
 
@@ -40,7 +40,7 @@ const OurOfferings: React.FC = () => {
           Vastu Products & Services
         </Typography>
 
-        <Typography align="center" color="text.secondary" sx={{ mb: 6, maxWidth: 900, mx: "auto" }}>
+        <Typography align="center" color="text.secondary" sx={{ mb: 6, maxWidth: 900, mx: "auto",fontSize: "1.2rem" }}>
           Enhance your space with our carefully curated Vastu products and service packages.
         </Typography>
 
