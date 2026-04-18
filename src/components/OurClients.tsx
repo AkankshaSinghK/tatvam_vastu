@@ -27,7 +27,7 @@ const testimonials = [
 
 const OurClients: React.FC = () => {
   return (
-    <Box sx={{ py: 10, backgroundColor: "#fff" }}>
+    <Box id="blog" sx={{ py: 10, backgroundColor: "#fff" }}>
       <Container maxWidth="md">
         <Typography align="center" sx={{ letterSpacing: 2, color: "#B8973C", fontSize: "14px", mb: 1 }}>
           TESTIMONIALS

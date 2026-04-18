@@ -1,9 +1,10 @@
 import React from "react";
 import { Box, Container, Typography } from "@mui/material";
+import founderImage from "../assets/founder.jpeg";
 
 const AboutUs: React.FC = () => {
   return (
-    <Box sx={{ py: 10, backgroundColor: "#f8f6f2" }}>
+    <Box id="about" sx={{ py: 10, backgroundColor: "#f8f6f2" }}>
       <Container maxWidth="lg">
         <Typography
           align="center"
@@ -40,7 +41,7 @@ const AboutUs: React.FC = () => {
             <Box sx={{ borderRadius: 4, overflow: "hidden", border: "2px solid #B8973C" }}>
               <Box
                 component="img"
-                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80"
+                src={founderImage}
                 alt="Founder"
                 sx={{ width: "100%", height: { xs: 320, md: 420 }, objectFit: "cover", display: "block" }}
               />

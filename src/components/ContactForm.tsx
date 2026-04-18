@@ -34,6 +34,7 @@ export default function ContactForm() {
   return (
     <Box
       component="section"
+      id="contact"
       sx={{
         maxWidth: 900,
         mx: "auto",

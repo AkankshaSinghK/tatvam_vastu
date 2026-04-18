@@ -92,7 +92,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description }) => {
 
 const OurServices: React.FC = () => {
   return (
-    <Box sx={{ py: 10, backgroundColor: "#f8f6f2" }}>
+    <Box id="services" sx={{ py: 10, backgroundColor: "#f8f6f2" }}>
       <Container maxWidth="lg">
         <Typography
           align="center"

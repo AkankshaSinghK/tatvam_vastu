@@ -14,14 +14,11 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import logo from "../assets/Logo_1.png";
 
 // Inline SVG logo matching the triangular Tatvam Vastu mark
 const LogoMark: React.FC<{ size?: number }> = ({ size = 42 }) => (
-  <svg width={size} height={size} viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <polygon points="30,5 55,50 5,50" fill="none" stroke="#C9A84C" strokeWidth="2.2" />
-    <polygon points="30,18 45,44 15,44" fill="#C9A84C" opacity="0.3" />
-    <line x1="30" y1="5" x2="30" y2="50" stroke="#C9A84C" strokeWidth="1.4" />
-  </svg>
+  <Box component="img" src={logo} sx={{ width: size, height: size }} />
 );
 
 const NAV_LINKS = ["Home", "About", "Services", "Blog", "Contact"];
@@ -46,7 +43,7 @@ const Navbar: React.FC = () => {
         sx={{
           background: "rgba(255, 255, 255, 0.96)",
           backdropFilter: "blur(10px)",
-          borderBottom: "1px solid rgba(201, 168, 76, 0.25)",
+          //borderBottom: "1px solid rgba(201, 168, 76, 0.25)",
         }}
       >
         <Toolbar
@@ -62,7 +59,7 @@ const Navbar: React.FC = () => {
             href="/"
             sx={{ display: "flex", alignItems: "center", gap: 1.5, textDecoration: "none" }}
           >
-            <LogoMark size={isMobile ? 34 : 42} />
+            <LogoMark size={isMobile ? 40 : 80} />
             <Typography
               sx={{
                 fontFamily: "'Cormorant Garamond', serif",
@@ -85,7 +82,7 @@ const Navbar: React.FC = () => {
                 <Typography
                   key={link}
                   component="a"
-                  href="#"
+                  href={link === "Home" ? "#hero" : link === "About" ? "#about" : link === "Services" ? "#services" : link === "Blog" ? "#blog" : "#getintouch"}
                   sx={{
                     fontFamily: "'Cormorant Garamond', serif",
                     fontSize: "14px",
@@ -173,7 +170,7 @@ const Navbar: React.FC = () => {
             <ListItem
               key={link}
               component="a"
-              href="#"
+              href={link === "Home" ? "#hero" : link === "About" ? "#about" : link === "Services" ? "#services" : link === "Blog" ? "#blog" : "#getintouch"}
               onClick={() => setDrawerOpen(false)}
               sx={{
                 py: 1.5,

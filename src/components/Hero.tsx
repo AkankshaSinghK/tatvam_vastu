@@ -1,5 +1,7 @@
 import React from "react";
 import { Box, Typography, Button, Container } from "@mui/material";
+import logo from "../assets/Logo_1.png";
+import heroBg from "../assets/hero_1.jpeg";
 
 /**
  * Hero section — matches the Tatvam Vastu design:
@@ -11,45 +13,33 @@ import { Box, Typography, Button, Container } from "@mui/material";
  */
 
 const LogoMark: React.FC<{ size?: number }> = ({ size = 80 }) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 80 80"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <polygon points="40,6 74,68 6,68" fill="none" stroke="#C9A84C" strokeWidth="2.5" />
-    <polygon points="40,22 60,58 20,58" fill="#C9A84C" opacity="0.25" />
-    <line x1="40" y1="6" x2="40" y2="68" stroke="#C9A84C" strokeWidth="1.6" />
-    <text
-      x="50%"
-      y="78"
-      textAnchor="middle"
-      fontSize="7"
-      fill="#C9A84C"
-      fontFamily="'Cormorant Garamond', serif"
-      letterSpacing="1.5"
-    >
-      TATVAM VASTU
-    </text>
-  </svg>
+  <Box
+    component="img"
+    src={logo}
+    alt="Tatvam Vastu logo"
+    sx={{
+      width: size,
+      height: size,
+      objectFit: "contain",
+      display: "block",
+    }}
+  />
 );
 
 const Hero: React.FC = () => {
   return (
     <Box
       component="section"
+      id="hero"
       sx={{
         position: "relative",
-        minHeight: { xs: "100svh", md: "92vh" },
+        height: { xs: "90vh", md: "100vh" },
+        paddingTop: { xs: "64px", md: "72px" },
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         overflow: "hidden",
-        // Blueprint background — uses a public Unsplash architectural drawing image.
-        // Replace `backgroundImage` URL with your own asset in production.
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80')",
+        backgroundImage: `url(${heroBg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -80,8 +70,17 @@ const Hero: React.FC = () => {
         }}
       >
         {/* Logo mark */}
-        <Box sx={{ mb: { xs: 3, md: 4 } }}>
-          <LogoMark size={80} />
+        <Box
+          sx={{
+            mb: { xs: 4, md: 5 },
+            p: { xs: 2, md: 3 },
+           // borderRadius: 3,
+            bgcolor: "rgba(255,255,255,0.94)",
+            boxShadow: "0 24px 60px rgba(0,0,0,0.12)",
+            border: "1px solid rgba(201,168,76,0.18)",
+          }}
+        >
+          <LogoMark size={120} />
         </Box>
 
         {/* Headline */}
